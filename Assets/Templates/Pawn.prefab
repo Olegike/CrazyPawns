@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 967640927816550439}
   - component: {fileID: 3822121263811634697}
   - component: {fileID: 1943715399338178067}
+  - component: {fileID: 5837746629679736536}
   m_Layer: 0
   m_Name: SphereSocket 01
   m_TagString: Untagged
@@ -105,6 +106,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5837746629679736536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822488028157087553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a073476547ac1340a5c338debf2aa93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4336407271673045507
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,6 +127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7607398093294646273}
+  - component: {fileID: 6221835363589866948}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -141,6 +155,20 @@ Transform:
   - {fileID: 5807247899300800454}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6221835363589866948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4336407271673045507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc4069294a2cf7489aad38e767dc3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseMaterial: {fileID: 2100000, guid: 7c43818076f5b4867ad517424bd0d68a, type: 2}
+  delMaterial: {fileID: 2100000, guid: 854bcfe2fa381404e981b4cafde1e4df, type: 2}
 --- !u!1 &6572458348302323540
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +181,7 @@ GameObject:
   - component: {fileID: 6983469710422659349}
   - component: {fileID: 8039290623323058629}
   - component: {fileID: 7724141220265440265}
+  - component: {fileID: 356755154771734687}
   m_Layer: 0
   m_Name: CubeBody
   m_TagString: Untagged
@@ -246,6 +275,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &356755154771734687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6572458348302323540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53647a9f6c7378f4bb146981228426b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6976845434568547336
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +299,7 @@ GameObject:
   - component: {fileID: 253445995089564782}
   - component: {fileID: 2667045952127566873}
   - component: {fileID: 1211455031588432381}
+  - component: {fileID: 406497670660766699}
   m_Layer: 0
   m_Name: SphereSocket 02
   m_TagString: Untagged
@@ -351,6 +393,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &406497670660766699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976845434568547336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a073476547ac1340a5c338debf2aa93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7758970563510421918
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +417,7 @@ GameObject:
   - component: {fileID: 4678150122574847482}
   - component: {fileID: 5589964279256305542}
   - component: {fileID: 430658776270710120}
+  - component: {fileID: 4253666814905120391}
   m_Layer: 0
   m_Name: SphereSocket 04
   m_TagString: Untagged
@@ -456,6 +511,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4253666814905120391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7758970563510421918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a073476547ac1340a5c338debf2aa93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8974895304155393534
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,6 +535,7 @@ GameObject:
   - component: {fileID: 6649352823379842626}
   - component: {fileID: 5554702584534788149}
   - component: {fileID: 8464554459641446980}
+  - component: {fileID: 158561865160656917}
   m_Layer: 0
   m_Name: SphereSocket 03
   m_TagString: Untagged
@@ -561,3 +629,15 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &158561865160656917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8974895304155393534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a073476547ac1340a5c338debf2aa93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
