@@ -21,14 +21,14 @@ public class StartTest : MonoBehaviour
     [SerializeField]
     private GameObject defaultCube;
     [SerializeField]
-    Material materialPole01;
+    private Material materialPole01;
     [SerializeField]
-    Material materialPole02;
+    private Material materialPole02;
 
     [SerializeField]
-    Material activePoint;
+    private Material activePoint;
     [SerializeField]
-    Material defaultPoint;
+    private Material defaultPoint;
 
 
     [SerializeField]
@@ -40,6 +40,7 @@ public class StartTest : MonoBehaviour
     private List<pawn> pawnList = new List<pawn>();
     private List<linePoint> posList = new List<linePoint>();
 
+    private Material tmpMaterial;
 
     private void InitData() 
     {
@@ -54,25 +55,34 @@ public class StartTest : MonoBehaviour
 
     void CreateDesck()
     {
-        Vector3 zeropos = transform.position;
+        float posX = transform.position.x - ( 0.5f * (MaxXcube - 1) * defaultCube.transform.localScale.x );
+        float posZ = transform.position.z - ( 0.5f * (MaxXcube - 1) * defaultCube.transform.localScale.z );
+
+        Vector3 zeropos = new Vector3(posX, transform.position.y, posZ);
         Quaternion zerorot = transform.rotation;
         int number = 0;
 
         for (int i = 0; i < MaxXcube; i++)
         {
-            zeropos.z = 0;
             for (int j = 0; j < MaxXcube; j++)
             {
-                zeropos.z += defaultCube.transform.localScale.z;
                 GameObject cub = Instantiate(defaultCube, zeropos, zerorot);
+                zeropos.x += defaultCube.transform.localScale.x;
 
-                if (number % 2 == 0) { cub.GetComponent<cubeinfo>().setMaterial(materialPole01); } 
+                if (number % 2 == 0) { cub.GetComponent<cubeinfo>().setMaterial(materialPole01); }
                 else { cub.GetComponent<cubeinfo>().setMaterial(materialPole02); }
 
                 cub.transform.parent = this.transform;
                 number++;
             }
-            zeropos.x += defaultCube.transform.localScale.x;
+            zeropos.z += defaultCube.transform.localScale.z;
+            zeropos.x = posX;
+            if (MaxXcube % 2 == 0) 
+            {
+                tmpMaterial = materialPole01;
+                materialPole01 = materialPole02;
+                materialPole02 = tmpMaterial;
+            }
         }
     }
 
@@ -81,15 +91,12 @@ public class StartTest : MonoBehaviour
         Vector3 zeropos = transform.position;
         Quaternion zerorot = transform.rotation;
 
-        int num = Random.Range(3, MaxPanw);
-
-        //for test
-        //num = 4;
+        int num = MaxPanw;
 
         for (int i = 0; i < num; i++)
         {
-            int zpos = Random.Range(1, MaxRadius);
-            int xpos = Random.Range(1, MaxRadius);
+            int zpos = Random.Range(-MaxRadius, MaxRadius);
+            int xpos = Random.Range(-MaxRadius, MaxRadius);
             int ypos = Random.Range(0, 360);
 
             zeropos.z = zpos;
