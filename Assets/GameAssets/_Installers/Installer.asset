@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7296c56a903dad64992731afe5ffac5b, type: 3}
+  m_Name: Installer
+  m_EditorClassIdentifier: 
+  _board: {fileID: 5299450287193941097, guid: 3fb9b8137bb22d0429b96f1f3e6e9996, type: 3}
+  _cell: {fileID: 5089229255800051666, guid: 93813a1172b775941b356d8285b5dc98, type: 3}
+  _pawnController: {fileID: 5041220931408638924, guid: f693eb87b530ff2408c1431d3af2d127,
+    type: 3}
+  _pawn: {fileID: 4844751287183733226, guid: 079773033224fbf4787e5f8c3b197cd2, type: 3}
+  _line: {fileID: 4932971898393917367, guid: 1e1b6a85a8fe4cd4e85f342d8e250fcd, type: 3}
+  _clickHandler: {fileID: 5461226510922396604, guid: 6351e54ea65d0314eb3a958cc8be31ea,
+    type: 3}
